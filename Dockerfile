@@ -1,7 +1,7 @@
 ARG DOCKER_REGISTRY=docker.io
 FROM ${DOCKER_REGISTRY}/qnib/alplain-golang as build
 
-ARG COMMIT=aa5cdcb11e7fd987587045bec62194cc31a7a707
+ARG COMMIT=3f0267c54885d6319cf0500a7ed2f1513a17228f
 LABEL prometheus..commit=${COMMIT}
 RUN apk --update add libarchive-tools wget \
  && mkdir -p /usr/local/src/github.com/prometheus/ \
